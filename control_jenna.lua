@@ -9,7 +9,7 @@ rs.Heartbeat:Connect(function()
     if v.Name == 'Jenna' then
       for i, n in pairs(v:GetChildren()) do
         if n.Name == 'Jenna' then
-			if not h.Health == 0 then
+			if h.Health ~= 0 then
           		n.Head.Handle.CFrame = hrp.CFrame * CFrame.new(0, 5, 10)
 			end
         end
